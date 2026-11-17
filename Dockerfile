@@ -1,6 +1,6 @@
 FROM quay.io/fedora/fedora-bootc:45
 
-RUN dnf install docker-compose gcc gcc-c++ git-core glibc-langpack-en --assumeyes \
+RUN dnf install docker-compose gcc gcc-c++ git-core glibc-langpack-en vim --assumeyes \
 	&& dnf remove nano nano-default-editor --assumeyes \
 	&& dnf clean all \
 	&& systemd-firstboot --reset --locale en_US.UTF-8 --timezone Asia/Seoul \
