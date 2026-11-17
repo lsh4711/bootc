@@ -1,0 +1,5 @@
+services:
+  bootc:
+    image: bootc
+    build:
+      context: .
